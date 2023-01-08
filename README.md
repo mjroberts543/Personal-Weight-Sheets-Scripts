@@ -14,7 +14,7 @@ I make 3 linear models. Two of them are used only graphically. The main model us
 
 # Challenges:  
 
-Perhaps the most obvious challenge is in recording the data. I just do my best. Ocassionally I miss a day and use interpolation to fix those missing data. Another challenge is the fact that bodies change, and in particular, metabolisms do. To combat this, I use the previous 100 days for the calculations. Generally speaking, 100 days seems to be adequate to accomodate changes in seasons, habits, age, and, of course, body weight. Of note, metabolism is expected to *increase* as body weight increases.
+Perhaps the most obvious challenge is in recording the data. I just do my best. Ocassionally I miss a day and use interpolation to fix those missing data. Another challenge is the fact that bodies change, and in particular, metabolisms do. To combat this, I use the previous 100 days for the calculations. Generally speaking, 100 days seems to be adequate to accommodate changes in seasons, habits, age, and, of course, body weight. Of note, metabolism is expected to *increase* as body weight increases.
 
 # Results:  
 
