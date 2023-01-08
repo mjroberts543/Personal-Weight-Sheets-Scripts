@@ -4,11 +4,11 @@
 
 This repository is for fun. It has the Google script I wrote to aid in recording daily calories and weight for modeling weight over time. While I am an advocate of intuitive eating for most people, I find it *fun* to have graphical representations of my biology and also to more precisely monitor changes in my metabolism, etc. I use the model to approximate maintenance calories needed per day. The Google sheet is quickly updated through the mobile app via the script, with daily charts depicting my running median weight, weight, and weight over the past (usually) 100 days. Rather than share the sheet I personally use, I've made a duplicate [here](https://docs.google.com/spreadsheets/d/1IT6woGeGJCVxaaguKvCthA8YgjMTViE1bA84M5y63Zc/edit?usp=sharing) for technical reasons (and also privacy).
 
-# The Data:  
+# Data:  
 
 I record the data daily, inputting (approximate) calories as I eat them and body weight each morning before submitting to the "record" sheet.
 
-# The Model:  
+# Models:  
 
 I make 3 linear models. Two of them are used only graphically. The main model used is a simple linear regression of my weight over the past 100 days. The slope of the model is used to calculate maintenance calories by taking the 100-day average of calories I eat and subtracting 3500 times the slope: 3500 calories is the approximate number per pound of body fat. Should I desire to use a different amount of time instead of 100 days, I can edit a particular cell which will then trigger a script to remake the charts and recalculate the maintenance based on that new timeframe.
 
