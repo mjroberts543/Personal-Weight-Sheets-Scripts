@@ -1,8 +1,9 @@
 //Sadly, sheets mobile doesn't allow the use of buttons, so I use this awkward "onEdit" function.
 function onEdit(e) {
 
-  test=e.range.offset(-5,0).getValue()
-
+  try{test=e.range.offset(-5,0).getValue();}
+  catch{test=-1}
+  
   if (e.range.getA1Notation() == 'H6' && test=='Maintenance') {
 
     e.range.setValue("Submit");
@@ -91,6 +92,8 @@ function onEdit(e) {
     }
   }
   //Here I change the charts when I adjust the timeframe I use to calculate maintenance calories.
+  try{test=e.range.offset(-4,5).getValue();}
+  catch{test=-1}
   if (e.range.getA1Notation() == 'C5') {
     var weightss = e.source; 
     var record = weightss.getSheetByName("record");
